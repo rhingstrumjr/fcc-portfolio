@@ -96,17 +96,113 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --mbgcolor: #2C314C;
+  --border-color: #040508;
+  --hov-bg-color: #181B2C;
+  --hov-font-color: #9498B1;
+  --onbg-font-color: #DADDED;
+  }
+
+/* Header and footer styling */
+header, footer {
+  background-color: var(--mbgcolor);
+  color: var(--onbg-font-color);
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding-top: 43vh;
+  height: 100vh;
+}
 
 
+/* Footer styling */
+footer {
+  height: 5em;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+
+footer * {
+  margin: 0;
+}
+/* Navbar styling - always viewiable and transparent */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 100;
+  display: block;
+}
+
+nav a {
+  padding: 0 1em 0 1em;
+  text-decoration-style: dotted;
+  color: var(--border-color);
+  float: right;
+}
+
+nav a:hover {
+  background-color: var(--hov-bg-color);
+  color: var(--hov-font-color);
+}
 
 
+/* Style the project display */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
 
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-around;
+}
 
+.project-tile {
+  height: 220px;
+  width: 320px;
+  background-color: var(--hov-font-color);
+  padding: 10px;
+  margin-top: 10px;
+}
 
+/* Contact info styles */
 
+.contact-info {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 
-
-
+.contact-info div {
+  margin: 0 2em 2em 2em;
+}
+.contact-info h3, h2 {
+  flex-basis: 100%;
+}
 
 
 
@@ -199,8 +295,11 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 932px) {
     /* Style adjustments for viewports that meet the condition */
+    .contact-info {
+      display: block;
+    }
 }
 
 @media print,

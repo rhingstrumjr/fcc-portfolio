@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -23,36 +24,69 @@
 
   <!-- Add your site or application content here -->
   <nav id="navbar">
-    <a href="#">Portfolio</a>
-    <a href="#">Current Projects</a>
-    <a href="#">Contact</a>
+    <a href="#contact">Contact</a>
+    <a href="#current-projects">Current Projects</a>
+    <a href="#portfolio">Portfolio</a>
   </nav>
 
   <header id="welcome-section">
     <h1>Rob Hingstrum's Web Development Portfolio</h1>
   </header>
 
-  <!-- Holds the past and current projects -->
-  <main >
-    <!-- Holds the past projects -->
-    <div id="projects">
+  <div class="wrapper">
+        <!-- Holds the past and current projects -->
+    <main id="portfolio">
+      <!-- Holds the past projects -->
+      <h2>Portfolio</h2>
+      <section id="projects">
+        <div class="project-tile">
+          <a href="#"><img src="https://via.placeholder.com/300x200?text=Product+Landing+Page" alt=""></a>
+        </div>
+
+        <div class="project-tile">
+          <a href="#"><img src="https://via.placeholder.com/300x200?text=Python+RPS+Game" alt=""></a>
+        </div>
+
+        <div class="project-tile">
+          <a href="#"><img src="https://via.placeholder.com/300x200?text=Ogre2+Tribute+Page" alt=""></a>
+        </div>
+
+        <div class="project-tile">
+          <a href="#"><img src="https://via.placeholder.com/300x200?text=Pixel+Art+Maker" alt=""></a>
+        </div>
+
+        <div class="project-tile">
+          <a href="#"><img src="https://via.placeholder.com/300x200?text=Jekyll+Documentation" alt=""></a>
+        </div>
+      </section>
+      <!-- Holds the current projects  -->
+      <h2 id="current-projects">Current Projects</h2>
       <div class="project-tile">
-        <a href="#">Title of site</a>
+        <a href="#"><img src="https://via.placeholder.com/300x200?text=GitHub+Repo" alt=""></a>
+      </div>
+    </main>
+
+    <div id="contact" class="contact-info">
+      <h3>Contact Info</h3>
+      <div>
+        <a href="#" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+        <br>GitHub
+      </div>
+      <div>
+        <a href="#" target="_blank"><i class="fab fa-free-code-camp fa-5x"></i></a>
+        <br>FreeCodeCamp
+      </div>
+      <div>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in fa-5x"></i></a>
+        <br>LinkedIn
       </div>
     </div>
-    <!-- Holds the current projects  -->
-    <div id="current-projects">
-      <a href="#">To GitHub repo</a>
-    </div>
-  </main>
-
-  <div class="contact-info">
-    <a href="#" target="_blank">GitHub Profile</a>
-    <a href="#" target="_blank">FreeCodeCamp Profile</a>
-    <a href="#" target="_blank">LinkedIn</a>
   </div>
-  
 
+  <footer>
+    <p>Evolving Coder</p>
+    <p>Developing with a Growth Mindset</p>
+  </footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
