@@ -15,6 +15,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <style media="screen">
+  @media only screen and (min-width: 1000px) {
+      /* Style adjustments for viewports that meet the condition */
+      .contact-info {
+        display: block;
+        position:sticky;
+        top: 10px;
+        right: 0;
+        align-self: flex-start;
+      }
+  }
+  </style>
 </head>
 
 <body>
@@ -77,7 +89,7 @@
     <div id="contact" class="contact-info">
       <h3>Contact Info</h3>
       <div>
-        <a href="https://github.com/rhingstrumjr" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+        <a id="profile-link" href="https://github.com/rhingstrumjr" target="_blank"><i class="fab fa-github fa-5x"></i></a>
         <br>GitHub
       </div>
       <div>
@@ -101,7 +113,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
 
 </body>
 
