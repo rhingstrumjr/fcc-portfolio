@@ -131,11 +131,13 @@ footer {
   height: 5em;
   text-align: center;
   padding: 1em 0 0 0;
+  margin-top: 1em;
 }
 
 footer * {
   margin: 0;
 }
+
 /* Navbar styling - always viewiable and transparent */
 
 nav {
@@ -169,7 +171,7 @@ nav a:hover {
   text-align: center;
 }
 
-#projects {
+#projects, #current-projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -203,6 +205,25 @@ nav a:hover {
 .contact-info h3, h2 {
   flex-basis: 100%;
 }
+
+.contact-info div a {
+  color: var(--mbgcolor);
+}
+
+
+.contact-info div a:hover {
+  color: var(--hov-font-color);
+  transition: .5s;
+}
+
+/* animate contact images */
+.contact-info div:hover {
+  transform: rotateY(360deg);
+  transition: .5s;
+  transition-delay: .2s;
+}
+
+
 
 
 
@@ -295,10 +316,14 @@ nav a:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 932px) {
+@media only screen and (min-width: 1000px) {
     /* Style adjustments for viewports that meet the condition */
     .contact-info {
       display: block;
+      position:sticky;
+      top: 10px;
+      right: 0;
+      align-self: flex-start;
     }
 }
 
